@@ -22,7 +22,9 @@ Bopify is built using an N-layer architecture to separate concerns and enhance m
 - **Spring Security:** Provides authentication and encodes user passwords for enhanced security.
 - **REST APIs:** Allow seamless communication with the database.
 
-![App Overview](./images/Technologies.png)
+<div align="center">
+  <img src="./images/Technologies.png" alt="App Overview" width="500" height="400"/>
+</div>
 
 ## Object-Oriented Programming Techniques 💻
 ### Encapsulation
