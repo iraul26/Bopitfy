@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xlmns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+    layout:decorate="layouts/inTemplate">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/bopify.css">
+</head>
+
+<body style="color: black;">
+    <div layout:fragment="content" style="background-color: white;">
+        <br>
+
+        <h1 class="title">Create a Playlist</h1>
+
+        <br>
+
+        <form action="#" method="post" th:action="@{processCreate}">
+            <div class="user-details">
+                <div class="input-box px-3">
+                    <span class="details">Playlist Name</span>
+                    <input th:field="*{playlistEntity.playlistName}" type="text" id="playlistName" placeholder="Playlist Name"
+                        required>
+                    
+                </div>
+            </div>
+
+            <div class="button px-3 pb-2">
+    			<input type="submit" value="Create">
+    	</div>
+        </form>
+
+    </div>
+</body>
+
+</html>

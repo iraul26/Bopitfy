@@ -1,0 +1,9 @@
+com.gcu
+com.gcu.api
+com.gcu.Business
+com.gcu.Controller
+com.gcu.Data
+com.gcu.Data.Mapper
+com.gcu.Data.Repository
+com.gcu.Entity
+com.gcu.Models

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xlmns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="layouts/inTemplate">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Playlists</title>
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/bopify.css">
+</head>
+
+<body style="background-color: #255bd8;">
+
+	<div layout:fragment="content" style="background-color: white;">
+		<br>
+		<h1 class="title">Library</h1>
+		
+		<!-- 
+		This can be added back into the page when we have persistent user data
+		<div class="container">
+			<h5>Welcome back!</h5>
+		</div>
+		 -->
+		 
+		 <!-- Table of user playlists -->
+		<div th:if="${playlists != null}">
+			<table style="width: 100%">
+				<thead>
+					<tr>
+						<th class="px-3" style="text-align: left">
+							<h4>Playlists:</h4>
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr th:if="${playlists.empty}">
+						<td style="text-align: center" colspan="2">No Playlists	Available</td>
+					</tr>
+					<tr th:each="playlist : ${playlists}">
+						<td class="px-3" style="text-align: center">
+							<h5 th:text="${playlist.playlistName}">Playlist 1</h5>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<form th:action="@{createPlaylist}">
+				<div class="button col-md-10 pb-3">
+					<input type="submit" value="Create a Playlist">
+				</div>
+			</form>
+			
+			<form th:action="@{deletePlaylist}">
+				<div class="button col-md-10 pb-3">
+					<input type="submit" value="Delete a Playlist">
+				</div>
+			</form>
+			<form th:action="@{editPlaylist}">
+				<div class="button col-md-10 pb-3">
+					<input type="submit" value="Edit a Playlist">
+				</div>
+			</form>
+			
+		</div>
+		<div th:unless="${playlists != null}">
+			<p>No playlists available</p>
+		</div>
+	</div>
+
+</body>
+
+</html>

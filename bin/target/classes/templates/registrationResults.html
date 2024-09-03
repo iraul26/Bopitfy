@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xlmns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="layouts/default">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+
+</head>
+<body style="background-color: #255bd8;">
+    <div layout:fragment="content" style="background-color: #255bd8;">
+    
+    	<div class="container" th:object="${user}">
+    		<p>First Name: <span th:text="*{firstName}"></span></p>
+    		<p>Last Name: <span th:text="*{lastName}"></span></p>
+    		<p>Email: <span th:text="*{email}"></span></p>
+    		<p>Phone Number: <span th:text="*{phoneNumber}"></span></p>
+    		<p>Username: <span th:text="*{username}"></span></p>
+    		<p>Password: <span th:text="*{password}"></span></p>
+    	</div>
+    
+    </div>
+        
+    
+</body>
+</html>

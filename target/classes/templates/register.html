@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xlmns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="layouts/outTemplate">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/bopify.css">
+
+</head>
+<body style="background-color: #255bd8;">
+    <div layout:fragment="content" style="background-color: #255bd8;">
+    
+    	<!-- registration form -->
+    <div class="container">
+    	<div class="title">Registration</div>
+    	<form action="#" method="post" th:action="@{/processRegister}" th:object="${user}" >
+    		<div class="user-details">
+    			<div class="input-box">
+    				<span class="details">First Name</span>
+    				<input th:field="*{firstName}" type="text" id="firstName" placeholder="Enter first name" required>
+    				<p class="alert alert-danger" th:if="${#fields.hasErrors('firstName')}" th:errors="*{firstName}">First Name Error</p>
+    			</div>
+    			<div class="input-box">
+    				<span class="details">Last Name</span>
+    				<input th:field="*{lastName}" type="text" id="lastName" placeholder="Enter last name" required>
+    				<p class="alert alert-danger" th:if="${#fields.hasErrors('lastName')}" th:errors="*{lastName}">Last Name Error</p>
+    			</div>
+    			<div class="input-box">
+    				<span class="details">Username</span>
+    				<input th:field="*{username}" type="text" id="username" placeholder="Enter username" required>
+    				<p class="alert alert-danger" th:if="${#fields.hasErrors('username')}" th:errors="*{username}">Username Error</p>
+    			</div>
+    			<div class="input-box">
+    				<span class="details">Email</span>
+    				<input th:field="*{email}" type="email" id="email" placeholder="Example@example.com" required>
+    				<p class="alert alert-danger" th:if="${#fields.hasErrors('email')}" th:errors="*{email}">Email Error</p>
+    			</div>
+    			<div class="input-box">
+    				<span class="details">Phone Number</span>
+    				<input  th:field="*{phoneNumber}"type="text" id="phoneNumber" placeholder="Enter phone number" required>
+    				<p class="alert alert-danger" th:if="${#fields.hasErrors('phoneNumber')}" th:errors="*{phoneNumber}">Phone Number Error</p>
+    			</div>
+    			<div class="input-box">
+    				<span class="details">Password</span>
+    				<input th:field="*{password}" type="password" id="password" placeholder="Enter password" required>
+    				<p class="alert alert-danger" th:if="${#fields.hasErrors('password')}" th:errors="*{password}">Password Error</p>
+    			</div>
+    		</div>
+    		<div class="button">
+    			<input type="submit" value="Register">
+    		</div>
+    		<div class="login_signup">
+    			Already have an account? <a href="/login">Log in</a>
+    		</div>
+    	</form>
+    </div>
+    
+    </div>
+        
+    
+</body>
+</html>

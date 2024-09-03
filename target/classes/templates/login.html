@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xlmns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="layouts/outTemplate">	
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/bopify.css">
+</head>
+
+<body style="background-color: #255bd8;">
+    <div layout:fragment="content" style="background-color: white; padding-right: 35px; padding-left: 35px">
+    <br>
+    
+    <!-- Login form -->
+    <h1 class="title">Login</h1><br>
+	    <form action="/login" method="post" th:object="${loginEntity}" >
+	    <div class="user-details">
+	    	<div class="username">
+	    		<div class="input-box">
+    				<span class="details">Username</span>
+    				<input th:field="*{username}" type="text" id="username" placeholder="Enter username" required>
+    				<p class="alert alert-danger" th:if="${#fields.hasErrors('username')}" th:errors="*{username}">Username Error</p>
+    			</div>
+	    	</div>
+	    	<div class="input-box">
+    				<span class="details">Password</span>
+    				<input th:field="*{password}" type="password" id="password" placeholder="Enter password" required>
+    				<p class="alert alert-danger" th:if="${#fields.hasErrors('password')}" th:errors="*{password}">Password Error</p>
+    		</div>
+    	</div>
+    	<div class="button">
+    			<input type="submit" value="Login">
+    	</div>
+    		<div class="registration">
+    			Don't have an account? <a href="/register">Register</a>
+    		</div>
+    		 <!-- Display error message if user doesnt exists -->
+            <div class="alert alert-danger" th:if="${errorMessage}">
+                <p th:text="${errorMessage}"></p>
+            </div>
+	    </form>
+    </div>
+</body>
+</html>

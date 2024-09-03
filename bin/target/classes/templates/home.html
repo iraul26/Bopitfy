@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xlmns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="layouts/default">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body style="background-color: #255bd8; color: black;">
+    <div layout:fragment="content" style="background-color: #255bd8;">
+        <br>
+        <h1>Bopify</h1>
+
+        <br>
+        <br>
+        <div class="container">
+            <h5 class="col-12">Welcome to Bopify, the world's newest competitor in the world of streaming and music.</h5>
+        </div>
+        <br>
+        <br>
+
+        <div class="container">
+            <div class="row">
+                <div class="col"><a href="/login" class="btn btn-outline-light col-12" text-decoration="none" style="color: black;">Login</a></div>
+                <div class="col"><a href="/register" class="btn btn-outline-light col-12" text-decoration="none" style="color: black;">Register</a></div>
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <div class="container">
+            <p class="col-10">If you're new to Bopify, please register and make an account to get started. If you're coming back, login to get to your library and bop.</p>
+        </div>
+    </div>
+</body>
+</html>

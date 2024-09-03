@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xlmns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+    layout:decorate="layouts/outTemplate">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/bopify.css">
+</head>
+
+<body>
+    <div layout:fragment="content" style="background-color: white;">
+        <br>
+        <!--Page Title-->
+        <h1 class="title">About Bopify</h1>
+        <br>
+
+        <!--Content Intro-->
+        <h5>Here at Bopify, we know that you'll enjoy our service above any of our competitors.</h5>
+        <h5>If you're not already convinced on switching, let's go over some of our brilliant features.</h5>
+        <br>
+
+        <!--Row 1 of features-->
+        <div class="row">
+            <div class="col-sm-5 mb-3 mb-sm-0 mx-auto">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Easy to Use</h5>
+                        <p class="card-text">Here at Bopify, we make it simple to get your music from your computer to
+                            your ears with our "patented" library system.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-5 mb-3 mb-sm-0 mx-auto">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Quality Updates</h5>
+                        <p class="card-text">The Bopify team is dedicated to creating the best possible solution for
+                            your music-listening needs, and is constantly updating our service to be even better.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <br>
+
+        <!--Row 2 of features-->
+        <div class="row">
+            <div class="col-sm-5 mb-3 mb-sm-0 mx-auto">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Artist Treatment</h5>
+                        <p class="card-text">Unlike some other companies, we do not charge any artist using our
+                            service royalties. (Please do not ask about their profits).</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-5 mb-3 mb-sm-0 mx-auto">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">It's Free!</h5>
+                        <p class="card-text">Listen to any music you want to hear completely free, with no ads,
+                            guaranteed!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <!--Ending login message-->
+        <div class="login_signup">
+            Already have an account? <a href="/login">Log in</a>
+        </div>
+        <br>
+    </div>
+</body>
+
+</html>
