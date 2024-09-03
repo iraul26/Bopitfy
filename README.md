@@ -48,7 +48,8 @@ The team divided work based on milestone assignment requirements. Collaborative 
 - **Communication:** Enabling timely notifications would enhance team communication.
 
 ## Demonstration 🎥
-A functional demonstration of Bopify is available to showcase the application's capabilities.
+A demonstration of Bopify is available to showcase the application's capabilities; 
+https://www.loom.com/share/d69462d5fc804e89a98af777c37cd11c?sid=c032c817-898c-4061-8517-2069cd348167
 
 ## Credits 🙌
 This project was developed by Group 8:
