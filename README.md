@@ -3,9 +3,7 @@
 ## Overview
 Bopify is a music library service that allows users to interact with a music database by registering an account, logging in, and creating, updating, or removing playlists in their personal library. The application is designed with a simple, responsive UI to ensure ease of use across various devices.
 
-<div align="center">
-  <img src="./images/App%20Overview.png" alt="App Overview" width="500" height="400"/>
-</div>
+<img src="./images/App%20Overview.png" alt="App Overview" width="500" height="400"/>
 
 ## Objectives 🎯
 - Create a service for users to interact with a music library.
@@ -22,9 +20,7 @@ Bopify is built using an N-layer architecture to separate concerns and enhance m
 - **Spring Security:** Provides authentication and encodes user passwords for enhanced security.
 - **REST APIs:** Allow seamless communication with the database.
 
-<div align="center">
-  <img src="./images/Technologies.png" alt="App Overview" width="500" height="400"/>
-</div>
+ <img src="./images/Technologies.png" alt="App Overview" width="500" height="400"/>
 
 ## Object-Oriented Programming Techniques 💻
 ### Encapsulation
