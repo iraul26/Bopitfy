@@ -4,7 +4,7 @@
 Bopify is a music library service that allows users to interact with a music database by registering an account, logging in, and creating, updating, or removing playlists in their personal library. The application is designed with a simple, responsive UI to ensure ease of use across various devices.
 
 <div align="center">
-  <img src="./images/App%20Overview.png" alt="App Overview" width="300"/>
+  <img src="./images/App%20Overview.png" alt="App Overview" width="500" height="400"/>
 </div>
 ## Objectives 🎯
 - Create a service for users to interact with a music library.
